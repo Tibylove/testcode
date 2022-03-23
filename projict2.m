@@ -1,8 +1,8 @@
 clc;clear;
-str="I'm A STUDENT"
-for i=1:length(str)
-   if str(i)>='A'&&str(i)<='Z'
-      str(i)=str(i)+('a'-'A');
-   end
-end
-str
+s1='I''m A STUDENT '
+k=find(s1>='A'&s1<='Z')
+ s1(k)=s1(k)+('a'-'A');
+  s1
+ s2=strrep(s1,'student','teacher');
+ s2
+
